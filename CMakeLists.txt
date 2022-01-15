@@ -1,5 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.0.0)
+# TODO: change template to project name
+project(template VERSION 0.1.0)
 
-project(template)
+add_subdirectory(app)
 
-add_executable(template out.exe)
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
